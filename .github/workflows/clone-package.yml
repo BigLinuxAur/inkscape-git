@@ -48,8 +48,8 @@ jobs:
         run: |
           gitfolder=$(find -type f -name PKGBUILD | sed 's/PKGBUILD//')
           cd $gitfolder
-          # sed -i "/\bdepends=/s/(/ \('xpto\' /" PKGBUILD
-          sed -i "/makedepends=/s/(/ \('cairomm-1.16\' 'pangomm-2.48\' 'graphene\' /" PKGBUILD
+          # sed -i "/\bdepends=/s/(/\('xpto\' /" PKGBUILD
+          sed -i "/makedepends=/s/(/\('cairomm-1.16\' 'pangomm-2.48\' 'graphene\' /" PKGBUILD
           # sed -i '/\bdepends=/!b; :a; n; a\    xpto' PKGBUILD
 
       - name: Update github
