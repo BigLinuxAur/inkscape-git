@@ -21,7 +21,7 @@ pkgdesc="An Open Source vector graphics editor, using SVG file format, from git 
 url="https://gitlab.com/inkscape"
 license=('GPL' 'LGPL')
 arch=('i686' 'x86_64')
-makedepends=('cmake' 'boost' 'git' 'ninja')
+makedepends= ('cairomm-1.16' 'pangomm-2.48' 'graphene' 'cmake' 'boost' 'git' 'ninja')
 depends=(
 	'dbus-glib'
 	'double-conversion'
